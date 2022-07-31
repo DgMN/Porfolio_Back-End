@@ -4,10 +4,7 @@
  */
 package system;
 
-/**
- *
- * @author PC Diego
- */
+
 public class properties {
     
 }

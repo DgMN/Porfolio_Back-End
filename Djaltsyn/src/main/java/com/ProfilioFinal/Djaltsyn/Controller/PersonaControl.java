@@ -28,7 +28,7 @@ public class PersonaControl {
     private IPersonaService IperSer;
     
     
-    @PreAuthorize("hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/new")
     public String agregarPersona(@RequestBody Persona per){
         IperSer.crearPersona(per);  
@@ -41,14 +41,14 @@ public class PersonaControl {
         return IperSer.verPersonas();
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/delete/{id}")
     public String borrarPersona(@PathVariable("id") Long id){
         IperSer.borrarPerson(id);
         return "La persona fue eliminada correctamente";
     }
     
-    @PreAuthorize("hasRole('ADMIN')")
+    //@PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/editar")
     public ResponseEntity<Persona> editarPersona(@RequestBody Persona persona){
         
