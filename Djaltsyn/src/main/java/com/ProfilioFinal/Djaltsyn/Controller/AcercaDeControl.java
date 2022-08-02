@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/acercaDe")
-@CrossOrigin(origins="http://localhost:4200")
+@CrossOrigin(origins="https://porfolio-frontent.web.app")
 public class AcercaDeControl {
     
     @Autowired

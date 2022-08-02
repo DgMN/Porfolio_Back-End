@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/edu")
-@CrossOrigin(origins= "http://localhost:4200")
+@CrossOrigin(origins= "https://porfolio-frontent.web.app")
 public class EduControl {
     
     @Autowired
